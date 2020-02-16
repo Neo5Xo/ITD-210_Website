@@ -1,2 +1,2 @@
-# ITD-210-Website
+# ITD 210 Website
 Class Project
