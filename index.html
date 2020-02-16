@@ -1,22 +1,22 @@
 <!--
-Home Page:
-- Dark Gray Background
-- Center Navbar
-- Logo Centered
-- Footer with Gray Background
-I'm Doing:
-- Homepage
-- Contact
-- Navbar
 Tutorials I Used:
-- https://www.youtube.com/watch?v=23bpce-5s8I
+- https://www.w3schools.com/css/css_link.asp
 - https://www.youtube.com/watch?v=hVdTQWASliE
-- https://www.w3schools.com/howto/howto_css_fixed_footer.asp
+- https://bootstrapious.com/p/bootstrap-recaptcha
+- https://getbootstrap.com/docs/4.0/components/forms
+- https://getbootstrap.com/docs/4.0/components/carousel
+- https://www.w3schools.com/howto/howto_css_parallax.asp
+- https://www.w3schools.com/howto/howto_css_contact_form.asp
+- https://www.w3schools.com/howto/howto_css_responsive_text.asp
+- https://www.youtube.com/playlist?list=PL55RiY5tL51rLqH4-8LBVlUTIFF70dxhb
+- http://www.networksolutions.com/support/how-to-create-an-html-mailto-link
+- https://stackoverflow.com/questions/18279516/hyperlink-for-telephone-number-and-redirect
+
+- Local, Simple and Honest
 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <title>Rustic Spoon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -25,8 +25,9 @@ Tutorials I Used:
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-
+    <script src="index.js"></script>
   </head>
+
   <body>
 
     <header>
@@ -35,12 +36,10 @@ Tutorials I Used:
           <img class="logoImage" src="img/logo.png" height="125"></img>
         </a>
       </div>
-
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark"><!--fixed-top-->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark"><!--fixed-top-->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav navbar-center">
             <li class="nav-item">
@@ -50,13 +49,10 @@ Tutorials I Used:
               <a href="about.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="social.html" class="nav-link">Social Media</a>
-            </li>
-            <li class="nav-item">
               <a href="menu.html" class="nav-link">Menu</a>
             </li>
             <li class="nav-item">
-              <a href="reservations.html" class="nav-link">Reservations</a>
+              <a href="https://www.opentable.com" rel="noopener noreferrer" target="_blank" class="nav-link">Reservations</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -69,31 +65,80 @@ Tutorials I Used:
       </nav>
     </header>
 
-    <div id="mainImage">
-      <h1>Rustic Spoon</h1>
-      <p>Family Friendly Restaurant</p>
-      <a href="about.html" class=button>About Us</a>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div style="background-image: url('img/firstSlide.jpg');"></div>
+          <!--<img class="d-block w-100" src="img/firstSlide.jpg" alt="First slide">-->
+        </div>
+        <div class="carousel-item">
+          <div style="background-image: url('img/secondSlide.jpg');"></div>
+          <!--<img class="d-block w-100" src="img/secondSlide.jpg" alt="Second slide">-->
+        </div>
+        <div class="carousel-item">
+          <div style="background-image: url('img/thirdSlide.jpg');"></div>
+          <!--<img class="d-block w-100" src="img/thirdSlide.jpg" alt="Third slide">-->
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
 
-    <div class="info" height="300">
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
-      <div>l</div>
+    <!--<div id="mainImage"></div>
+    <!--<div>
+      <a href="about.html" class="aboutButton">About Us</a>
+    </div>-->
+
+
+    <div class="parallax" style="background-image: url('img/front_editedCropped.jpg'); height: 40vh;">
+      <h1>About Us</h1>
     </div>
 
-    <footer class="footer" height="125">
-      <div>Footer</div>
-      <div>placeholder</div>
-      <div>placeholder</div>
+    <p class="ourStory" align="center">
+      <i>
+      Partners and long-time friends, Ryan Hines and Jay Kulas believe that the most important moments in
+      life are about building relationships and usually involve a great meal. Maintaining a friendship for
+      over fifteen years, the two shared a common approach when it came to opening a restaurant - to create a
+      warm and comfortable atmosphere for friends and family to gather, curate experiences and build
+      meaningful connections.
+      <br><br>
+      Stripping away the formalities of the typical dining experience, The Rustic Spoon is serving up
+      breakfast, brunch and lunch while focusing on quality local ingredients, family recipes, warm service
+      and a relaxed causal ambiance. Rooted in family, friends and food they offer diners a one of a kind
+      atmosphere to enjoy comfort food recipes with a modern and local twist.
+      </i></font>
+    </p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <footer style="padding: 20px;">
+      <div class="row">
+        <div class="col whiteLink">
+          <h5>Email:</h5>
+          <a href="mailto:therusticspoonvb@yahoo.com">therusticspoonvb@yahoo.com</a>
+        </div>
+        <div class="col whiteLink">
+          <h5>Phone:</h5>
+          <a href="tel:7579378930"><nobr>(757) 937-8930</nobr></a>
+        </div>
+        <div class="col whiteLink">
+          <h5>Address:</h5>
+          <p><a href="https://www.google.com/maps/place/The+Rustic+Spoon/@36.89649,-76.1412338,17z/data=!3m1!4b1!4m5!3m4!1s0x89ba95f977b22cbb:0x5f78d04dc2864313!8m2!3d36.8964857!4d-76.1390398" rel="noopener noreferrer" target="_blank">
+            1658 Pleasure House Rd Ste. 101<br>
+            Virginia Beach, VA 23455</a></p>
+        </div>
+      </div>
+      <div class="text-center">© 2020 Copyright: Chris Younkin</div>
     </footer>
 
   </body>
