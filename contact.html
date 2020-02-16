@@ -5,10 +5,13 @@
     <title>Rustic Spoon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+
 
   </head>
   <body>
@@ -20,7 +23,7 @@
         </a>
       </div>
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark"><!--fixed-top-->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark"><!--fixed-top-->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,13 +37,10 @@
               <a href="about.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="social.html" class="nav-link">Social Media</a>
-            </li>
-            <li class="nav-item">
               <a href="menu.html" class="nav-link">Menu</a>
             </li>
             <li class="nav-item">
-              <a href="reservations.html" class="nav-link">Reservations</a>
+              <a href="https://www.opentable.com" rel="noopener noreferrer" target="_blank" class="nav-link">Reservations</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -52,6 +52,63 @@
         </div>
       </nav>
     </header>
+
+    <div class="parallax" style="background-image: url('img/contact_edited.jpg'); height: 300px;">
+      <h1>Contact</h1>
+    </div>
+
+    <div class="contactInfo">
+      <div class="row">
+        <div class="col my-col">
+          <h3>Email:</h3>
+          <a href="mailto:therusticspoonvb@yahoo.com">therusticspoonvb@yahoo.com</a>
+        </div>
+        <div class="col my-col">
+          <h3>Phone:</h3>
+          <a href="tel:7579378930"><nobr>(757) 937-8930</nobr></a>
+        </div>
+        <div class="col my-col">
+          <h3>Address:</h3>
+          <p><a href="https://www.google.com/maps/place/The+Rustic+Spoon/@36.89649,-76.1412338,17z/data=!3m1!4b1!4m5!3m4!1s0x89ba95f977b22cbb:0x5f78d04dc2864313!8m2!3d36.8964857!4d-76.1390398" rel="noopener noreferrer" target="_blank">
+            1658 Pleasure House Rd Ste. 101<br>
+            Virginia Beach, VA 23455</a></p>
+        </div>
+      </div>
+    </div>
+
+    <form class="contactForm">
+      <div class="row">
+        <label class="col-sm-2 col-form-label">Name:</label>
+        <div class="col">
+          <input class="form-control" placeholder="Enter your name.">
+        </div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2 col-form-label">Email:</label>
+        <div class="col">
+          <input class="form-control" placeholder="Enter your email.">
+        </div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2 col-form-label">Subject:</label>
+        <div class="col">
+          <input class="form-control" placeholder="Enter subject.">
+        </div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2 col-form-label">Description:</label>
+        <div class="col">
+          <textarea class="form-control" placeholder="How can we help you?" rows="10"></textarea>
+        </div>
+      </div>
+
+      <div class="g-recaptcha" data-sitekey="6LebB9cUAAAAANkxg4gmtrYoDlHhfAc8gaa4CLxt"></div>
+      <button class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="messenger">
+      Also on messenger at <a href="https://m.me/therusticspoonvb" rel="noopener noreferrer" target="_blank">m.me/therusticspoonvb<a>.
+    </div>
 
     <footer>
     </footer>
