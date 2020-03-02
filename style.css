@@ -4,6 +4,32 @@
   font-family: 'Martel Sans', sans-serif;
 }
 
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 400px) {
+  .parallax h1 {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .parallax h1 {
+    font-size: 55px;
+  }
+}
+
+.parallax h1 {
+  color: lightgray;
+  font-weight: bold;
+}
+
 .navbar-nav.navbar-center {
     position: relative;
     left: 50%;
@@ -11,21 +37,31 @@
     transform: translatex(-50%);
 }
 
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 .logoImage {
   position: relative;
   left: 50%;
   right: 50%;
   transform: translatex(-50%);
-}
 
-.footer {
-  width: 100%;
-  color: black;
-  background-color: white;
-  padding: 10px;
-  border: black 5px solid;
 }
 
 .logoImageDiv {
   background-color: #353942;
+}
+
+footer {
+  color: white;
+  background-color: #353942;
+}
+
+.whiteLink a {
+  color: white;
+}
+
+footer div .col {
+  padding: 10px;
 }

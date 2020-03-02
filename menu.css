@@ -1,0 +1,27 @@
+.menuPictures {
+  margin: 10px 20px 0px 20px;
+}
+
+.my-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  flex-direction: column;
+}
+
+.menu-col {
+  margin: 0px;
+  padding: 10px;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menuPictures {
+  text-align: center;
+}
